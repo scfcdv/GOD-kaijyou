@@ -1,23 +1,13 @@
-<head>
 <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 <title>神階乗</title>
-</head>
-<body>
 <h1 id="title"></h1>
 </div>
 </main>
 <py-script>
-    def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
-
 num = int(input(""))
-result = factorial(num)
 </py-script>
 <py-script output="title">
-print(result)
+import math
+print(math.factorial(num))
 </py-script>
-</body>
